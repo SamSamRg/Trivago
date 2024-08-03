@@ -1,0 +1,118 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc5NDB8MHwxfGFsbHwxfHx8fHx8fHwxNjY3NzYxNTI3&ixlib=rb-1.2.1&q=80&w=1920'); /* Imagen de fondo */
+    background-size: cover; /* Cubrir toda la página */
+    background-position: center; /* Centrar la imagen */
+    color: black; /* Texto negro */
+    height: 100vh; /* Altura completa de la ventana */
+    margin: 0; /* Eliminar márgenes */
+}
+
+.container-fluid {
+    background-color: rgba(255, 255, 255, 0.7); /* Fondo blanco con más transparencia */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 40px; /* Más espacio alrededor del contenido */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada para el contenedor */
+}
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0.7); /* Fondo blanco con transparencia */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 10px; /* Espaciado interior */
+    margin-bottom: 30px; /* Espacio debajo de la barra de navegación */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para la barra de navegación */
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+    color: black; /* Color del texto de la barra de navegación */
+    font-size: 1rem; /* Tamaño de fuente de los enlaces */
+    padding: 15px; /* Espaciado interno para hacer los elementos más grandes */
+}
+
+.navbar .nav-link:hover {
+    color: #007bff; /* Color del enlace al pasar el mouse */
+    text-decoration: underline; /* Subrayar el enlace al pasar el mouse */
+}
+
+header {
+    margin-bottom: 20px; /* Reducir el margen inferior */
+}
+
+h1 {
+    font-size: 2rem; /* Tamaño de fuente más pequeño para el título */
+    font-weight: bold; /* Hacer que el título sea más audaz */
+}
+
+.lead {
+    font-size: 1.2rem; /* Tamaño de fuente más grande para la descripción */
+    margin-bottom: 20px; /* Espacio adicional debajo de la descripción */
+}
+
+.input-group {
+    margin-bottom: 30px; /* Espacio debajo del buscador */
+    width: 100%; /* Asegurarse de que ocupe todo el ancho */
+}
+
+.input-group input {
+    border-radius: 5px 0 0 5px; /* Bordes redondeados para el input */
+    border: 1px solid #ccc; /* Borde gris claro para el input */
+    padding: 15px; /* Padding dentro del input */
+    font-size: 1rem; /* Tamaño de fuente del input */
+    width: 100%; /* Asegurarse de que el input ocupe todo el ancho disponible */
+    transition: border-color 0.3s; /* Transición suave para el foco */
+}
+
+.input-group .btn {
+    background-color: #28a745; /* Color de fondo del botón */
+    border: none; /* Sin borde */
+    padding: 15px; /* Padding dentro del botón */
+    font-size: 1rem; /* Tamaño de fuente del botón */
+    color: white; /* Texto blanco */
+    transition: background-color 0.3s, transform 0.2s; /* Transiciones suaves para el hover */
+    height: 100%; /* Hacer que el botón tenga la misma altura que el input */
+}
+
+.input-group .btn:hover {
+    background-color: #218838; /* Color más oscuro al pasar el mouse */
+}
+
+.product {
+    border: 1px solid #ddd; /* Borde gris claro para los productos */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 20px; /* Aumentar el padding del producto */
+    margin: 20px; /* Aumentar el margen entre productos */
+    background-color: #f8f9fa; /* Fondo claro para los productos */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada para los productos */
+    transition: transform 0.2s; /* Transición para el efecto hover */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product:hover {
+    transform: translateY(-5px); /* Elevar el producto al pasar el mouse */
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.product a {
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007bff; /* Color del enlace */
+}
+
+.product a:hover {
+    text-decoration: underline;
+}
+
+.no-results {
+    text-align: center;
+    color: #888; /* Color de texto para "no se encontraron resultados" */
+    margin: 20px 0;
+}
